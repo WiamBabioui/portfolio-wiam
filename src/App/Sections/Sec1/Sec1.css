@@ -1,0 +1,196 @@
+.sec1 {
+  padding-top: 100px;
+}
+
+.sec1 h1 {
+  color: #fff;
+  text-align: center;
+  font-family: "IBM Plex Mono";
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 78px; /* 162.5% */
+  letter-spacing: 5.76px;
+}
+
+
+.sec1 h1 span {
+  background: linear-gradient(
+    90deg,
+     #b51763 0%,   
+    #ff2f7d 40%,
+    #ffc1d9 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: gradient-x 2s linear infinite; /* Animation infinie */
+}
+
+@keyframes gradient-x {
+  0%,
+  100% {
+    background-size: 200% 200%;
+    background-position: left center;
+  }
+  50% {
+    background-size: 200% 200%;
+    background-position: right center;
+  }
+}
+
+.link-icon {
+  width: 50px;
+  height: 50px;
+  /* border-radius: 10px; */
+  display: flex;
+  /* background-color: rgb(45, 45, 45); */
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white !important;
+  position: relative;
+  overflow: hidden; /* Pour cacher la partie du gradient qui déborde */
+  transition: 5s !important;
+}
+
+.link-icon:hover {
+  background: linear-gradient(
+    90deg,
+     #b51763 0%,   
+    #ff2f7d 40%,
+    #ffc1d9 100%
+  ) !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  border: 2px solid transparent; /* Border transparente */
+  border-image: linear-gradient(
+    90deg,
+     #b51763 0%,   
+    #ff2f7d 40%,
+    #ffc1d9 100%
+  ) !important; /* Gradient de la bordure */
+  border-image-slice: 1 !important;
+  border-radius: 10px !important;
+}
+
+.link-icon a {
+  color: white;
+  font-size: 20px;
+}
+.col-btns-sec1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.col-btns-sec1 .btn_cv {
+  width: 100%;
+  text-align: center;
+  font-family: "IBM Plex Mono";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 45px;
+  padding: 0px 20px;
+  letter-spacing: 2.16px;
+  background: linear-gradient(
+    90deg,
+     #b51763 0%,   
+    #ff2f7d 40%,
+    #ffc1d9 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-radius: 6px;
+  border: 1px solid #ff2f7d;
+}
+.col-btns-sec1 .btn_contact {
+  width: 100%;
+  text-decoration: none !important;
+  text-align: center;
+  font-family: "IBM Plex Mono";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 45px;
+  padding: 0px 20px;
+  letter-spacing: 2.16px;
+  background: linear-gradient(
+    90deg,
+     #b51763 0%,   
+    #ff2f7d 40%,
+    #ffc1d9 100%
+  );
+  color: white;
+  border-radius: 6px;
+  border: 1px solid #ff2f7d;
+}
+@media screen and (max-width: 576px) {
+  .sec1 h1 {
+    text-align: center;
+    color: #fff;
+    text-align: center;
+    font-family: "IBM Plex Mono";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 49px; /* 153.125% */
+    letter-spacing: 3.2px;
+  }
+  .col-btns-sec1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .sec1 h1 {
+    color: #fff;
+    text-align: center;
+    font-family: "IBM Plex Mono";
+    font-size: 49.089px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 75.167px; /* 153.125% */
+    letter-spacing: 4.909px;
+  }
+  .col-btns-sec1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1010px) {
+  .sec1 h1 {
+    color: #fff;
+    font-family: "IBM Plex Mono";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 49px; /* 153.125% */
+    letter-spacing: 3.2px;
+  }
+  .col-btns-sec1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+}
+
+@media screen and (min-width: 769px) and (max-width: 1010px) {
+}

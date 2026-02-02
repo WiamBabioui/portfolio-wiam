@@ -1,0 +1,63 @@
+.card-works {
+  background: rgba(68, 68, 68, 0.493);
+  /* border: 3px solid #ff274b; */
+  border-radius: 15px;
+  height: 100%;
+}
+.hsdgfsdgh {
+  padding: 0;
+  height: 170px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 15px 15px 0 0 !important;
+}
+.card-works .card-header {
+  padding: 0;
+  height: 170px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 15px 15px 0 0 !important;
+}
+.card-works .card-header img {
+  width: 100%;
+}
+
+.card-works .card-body h5 {
+  color: white;
+  font-size: 15px;
+  margin: 0;
+}
+.card-works .card-body p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.559);
+  font-size: 12px;
+}
+
+.card-works .card-body {
+  gap: 10px;
+}
+
+.type-work {
+  font-size: 10px;
+  color: silver;
+  background: rgba(68, 68, 68, 0.176);
+  padding: 2px 5px;
+  border-radius: 10px;
+}
+
+.container-outils-cars-works {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.container-outils-cars-works div p {
+  padding: 1px 5px;
+  border-radius: 10px;
+}

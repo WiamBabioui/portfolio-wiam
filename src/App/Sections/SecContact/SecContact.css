@@ -1,0 +1,172 @@
+:root {
+  --bg1: #000;
+  --white: #fff;
+  --color-1:  #ff2f7d;
+  --color-2: #f7bcf7;
+  --color-3: #f9dbbb;
+  --color-4: #4e6e81;
+  --color-5: #2e3840;
+}
+
+#contact h5 {
+  color: #e8f9fd;
+  font-family: "IBM Plex Mono";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+#contact h5 span {
+  font-family: Frijole;
+  letter-spacing: 2.88px;
+  color: white;
+  animation: colorPulse 2s infinite alternate;
+}
+
+@keyframes colorPulse {
+  0% {
+    color: white;
+  }
+
+  50% {
+    color: #f9dbbb;
+  }
+  100% {
+    color: #ff2f7d;
+  }
+}
+.row-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.form-group label {
+  color: #ff2f7d;
+  font-family: "IBM Plex Mono";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.form-group input {
+  display: flex;
+  height: 26px;
+  padding: 6px 5px;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 1px;
+  border: none;
+  border-bottom: 2px solid #ff2f7d;
+  background-color: transparent;
+  outline: none;
+  color: white;
+}
+.form-group textarea {
+  display: flex;
+  height: 126px;
+  padding: 6px 5px;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 1px;
+  border: none;
+  border-bottom: 2px solid #ff2f7d;
+  background-color: transparent;
+  outline: none;
+  color: white;
+  resize: none;
+}
+.form-group input:focus {
+  background-color: transparent;
+}
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #c0c0c0;
+  font-family: "IBM Plex Mono";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.formContact {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+#send {
+  display: flex;
+  padding: 10px 32px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 32px;
+  background: var(--color-1);
+  border: none;
+  color: var(--white);
+  border: 3px solid var(--color-1);
+  transition: 0.5s;
+}
+#send:hover {
+  background-color: transparent;
+  color: var(--color-1);
+}
+.heuzhfub {
+  display: flex;
+  gap: 10px;
+}
+@media screen and (max-width: 576px) {
+  #contact h5 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .row-form {
+    display: flex;
+    flex-direction: column !important;
+    gap: 30px;
+  }
+  .heuzhfub {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  .formContact {
+    padding-top: 50px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  #contact h5 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .heuzhfub {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  .formContact {
+    padding-top: 50px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1010px) {
+  #contact h5 {
+    color: #e8f9fd;
+    font-family: "IBM Plex Mono";
+    font-size: 35.706px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}

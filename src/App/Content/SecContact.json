@@ -1,0 +1,48 @@
+{
+  "titre1": {
+    "en": "Contact",
+    "fr": "Contact"
+  },
+  "desc": {
+    "en": "I’m currently available for freelance work",
+    "fr": "Je suis actuellement disponible pour des missions freelance"
+  },
+  "para": {
+    "en": "Let's <span>talk</span> for somethings special",
+    "fr": "Viens <span>discuter</span> de quelque chose de spécial"
+  },
+  "nom": {
+    "label": {
+      "en": "Your name",
+      "fr": "Votre nom"
+    },
+    "placeholder": {
+      "en": "Enter your name",
+      "fr": "Entrez votre nom"
+    }
+  },
+  "email": {
+    "label": {
+      "en": "Your email",
+      "fr": "Votre e-mail"
+    },
+    "placeholder": {
+      "en": "Enter your email",
+      "fr": "Entrez votre e-mail"
+    }
+  },
+  "message": {
+    "label": {
+      "en": "Your message",
+      "fr": "Votre message"
+    },
+    "placeholder": {
+      "en": "Enter your message",
+      "fr": "Entrez votre message"
+    }
+  },
+  "btn_send": {
+    "en": "Send",
+    "fr": "Envoyer"
+  }
+}

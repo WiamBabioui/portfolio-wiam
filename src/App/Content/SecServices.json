@@ -1,0 +1,56 @@
+{
+  "titre1": {
+    "en": "Services",
+    "fr": "Services"
+  },
+  "desc": {
+    "en": "I can provide multiple services with high performance",
+    "fr": "Je propose plusieurs services avec des performances élevées"
+  },
+  "services": [
+    {
+      "icon": "fa-solid fa-code",
+      "label": {
+        "en": "Web Dev",
+        "fr": "Développement Web"
+      },
+      "description": {
+        "en": "I can create dynamic, responsive websites with a focus on scalability and user experience.",
+        "fr": "Je développe des sites web dynamiques et responsives, en mettant l'accent sur la scalabilité et l'expérience utilisateur."
+      }
+    },
+    {
+      "icon": "fa-solid fa-paint-brush",
+      "label": {
+        "en": "Web Design",
+        "fr": "Design Web"
+      },
+      "description": {
+        "en": "I design visually appealing, user-friendly websites that ensure an intuitive experience",
+        "fr": "Je conçois des sites web esthétiques et conviviaux, garantissant une expérience intuitive pour l'utilisateur."
+      }
+    },
+    {
+      "icon": "fa-solid fa-chart-line",
+      "label": {
+        "en": "Data Analyst",
+        "fr": "Analyse de Données"
+      },
+      "description": {
+        "en": "I analyze complex datasets to extract meaningful insights, create visual dashboards, and support data-driven decision-making.",
+        "fr": "J’analyse des ensembles de données complexes pour en extraire des informations utiles, créer des tableaux de bord visuels et soutenir la prise de décisions basées sur les données."
+      }
+    },
+    {
+      "icon": "fa-brands fa-wordpress",
+      "label": {
+        "en": "Wordpress",
+        "fr": "WordPress"
+      },
+      "description": {
+        "en": "I build custom WordPress sites with tailored themes and plugins for enhanced functionality, including the use of ACF (Advanced Custom Fields).",
+        "fr": "Je crée des sites WordPress personnalisés avec des thèmes et des plugins sur mesure pour une fonctionnalité optimale, y compris l’utilisation d’ACF (Advanced Custom Fields)."
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "links_nav": {
+    "fr": [
+      "accueil",
+      "à propos",
+      "compétences",
+      "projets",
+      "services",
+      "contact"
+    ],
+    "en": ["home", "about me", "skills", "works", "services", "contact"]
+  }
+}

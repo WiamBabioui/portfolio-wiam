@@ -1,0 +1,63 @@
+.card-n2 {
+  background-color: transparent;
+  border: 1px solid #ff2f7d;
+  padding: 20px;
+}
+.row-about {
+  display: flex;
+  align-items: center;
+}
+.row-about img {
+  filter: drop-shadow(2px 2px 15px #ff2f7d);
+  max-width: 80% !important;
+  height: auto;
+}
+.card-n2 h3 {
+  color:  #ff2f7d ;  
+  font-family: "IBM Plex Mono";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px; /* 81.25% */
+  letter-spacing: 0.32px;
+}
+
+.card-n2 p {
+  color: #fff;
+  font-family: "IBM Plex Mono";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  text-align: justify;
+  letter-spacing: 0.16px;
+}
+
+.card-n2 p span {
+  color: #f7bcf7;
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0.16px;
+}
+
+@media screen and (max-width: 576px) {
+  .row-about {
+    flex-direction: column-reverse;
+  }
+  .card-n2 p {
+    font-size: 12.5px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .row-about {
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1010px) {
+  .row-about {
+    flex-direction: column-reverse;
+  }
+}

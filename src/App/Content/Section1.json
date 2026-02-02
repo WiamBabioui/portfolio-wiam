@@ -1,0 +1,14 @@
+{
+  "titre1": {
+    "en": "Hello, my name is <span>Wiam Babioui</span>, I’m a <span>Full-stack</span> Developer",
+    "fr": "Bonjour, je m'appelle <span>Wiam Babioui</span>, je suis une <span>Développeuse Full-stack</span>"
+  },
+  "contact_btn": {
+    "en": "Get in touch",
+    "fr": "Contactez-moi"
+  },
+  "btn_cv": {
+    "en": "Download CV",
+    "fr": "Télécharger le CV"
+  }
+}

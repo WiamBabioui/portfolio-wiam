@@ -1,0 +1,129 @@
+{
+  "titre1": {
+    "en": "Works",
+    "fr": "Projets"
+  },
+  "desc": {
+    "en": "I had the pleasure of working on these awesome projects",
+    "fr": "J'ai eu le plaisir de travailler sur ces projets remarquables"
+  },
+  "works": [
+    {
+      "title": {
+        "en": "Talib Job",
+        "fr": "Talib Job"
+      },
+      "description": {
+        "en": "A web platform developed to connect students and companies, enabling account creation, job posting, application management, and tracking application status within a modern recruitment system.",
+        "fr": "Une application web développée pour gérer les événements au sein de la CMC Casablanca. Elle permet aux utilisateurs de consulter les événements, réserver des billets, et accéder aux détails des manifestations organisées."
+      },
+      "imgs": [
+        "/imgWorks/talib-job/img1.png",
+        "/imgWorks/talib-job/img2.png",
+        "/imgWorks/talib-job/img3.png",
+        "/imgWorks/talib-job/img4.png"
+        
+      ],
+      "technologies": [
+        {
+          "label": "Laravel 12",
+          "icon": "fa-brands fa-laravel",
+          "class": "sc6"
+        },
+        { "label": "ReactJs", "icon": "fa-brands fa-react", "class": "sc4" },
+        {
+          "label": "Bootstrap",
+          "icon": "fa-brands fa-bootstrap",
+          "class": "sc3"
+        },
+        { "label": "CSS", "icon": "fa-brands fa-css3-alt", "class": "sc2" },
+        { "label": "SQL", "icon": "fa-solid fa-database", "class": "sc6" },
+        { "label": "Figma", "icon": "fa-brands fa-figma", "class": "sc3" },
+        {
+          "label": "StarUML",
+          "icon": "fa-solid fa-diagram-project",
+          "class": "sc4"
+        },
+        { "label": "Github", "icon": "fa-brands fa-github", "class": "sc4" }
+      ]
+    },
+    {
+      "title": {
+        "en": "Playlist Manager",
+        "fr": "Playlist Manager"
+      },
+      "description": {
+        "en": "A web application created to manage music playlists efficiently. It enables users to add tracks, organize collections, control playback, and enjoy a fully responsive interface.",
+        "fr": "Une application web développée pour gérer des playlists musicales efficacement. Elle permet aux utilisateurs d’ajouter des titres, organiser leurs collections, contrôler la lecture, et profiter d’une interface moderne, responsive et intuitive complète."
+      },
+      "imgs": [
+        "/imgWorks/playlist-manager/i1.png",
+        "/imgWorks/playlist-manager/i2.png",
+        "/imgWorks/playlist-manager/i3.png",
+        "/imgWorks/playlist-manager/i4.png"
+      ],
+      "technologies": [
+        {
+          "label": "Laravel 12",
+          "icon": "fa-brands fa-laravel",
+          "class": "sc6"
+        },
+        { "label": "ReactJs", "icon": "fa-brands fa-react", "class": "sc4" },
+        {
+          "label": "Bootstrap",
+          "icon": "fa-brands fa-bootstrap",
+          "class": "sc3"
+        },
+        { "label": "CSS", "icon": "fa-brands fa-css3-alt", "class": "sc2" },
+        { "label": "SQL", "icon": "fa-solid fa-database", "class": "sc6" },
+        { "label": "Figma", "icon": "fa-brands fa-figma", "class": "sc3" },
+        {
+          "label": "StarUML",
+          "icon": "fa-solid fa-diagram-project",
+          "class": "sc4"
+        },
+        { "label": "Github", "icon": "fa-brands fa-github", "class": "sc4" }
+      ]
+    },
+    {
+      "title": {
+        "en": "Web Application for Library Management",
+        "fr": "Application Web pour la gestion d'une bibliothèque"
+      },
+      "description": {
+        "en": "A web application for library management, allowing users to reserve books for borrowing, check reservation statuses, and enabling the administrator to manage books and loan requests.",
+        "fr": "Une application web pour une bibliothèque, permettant aux utilisateurs de réserver des livres à emprunter, consulter l’état des réservations, et à l’administrateur de gérer les livres et les demandes de prêt."
+      },
+      "imgs": [
+        "/imgWorks/Maktabati/i1.png",
+        "/imgWorks/Maktabati/i2.png",
+        "/imgWorks/Maktabati/i3.png",
+        "/imgWorks/Maktabati/i4.png",
+        "/imgWorks/Maktabati/i5.png",
+        "/imgWorks/Maktabati/i6.png"
+      ],
+      "technologies": [
+        {
+          "label": "Laravel 12",
+          "icon": "fa-brands fa-laravel",
+          "class": "sc6"
+        },
+        { "label": "ReactJs", "icon": "fa-brands fa-react", "class": "sc4" },
+        {
+          "label": "Bootstrap",
+          "icon": "fa-brands fa-bootstrap",
+          "class": "sc3"
+        },
+        { "label": "CSS", "icon": "fa-brands fa-css3-alt", "class": "sc2" },
+        { "label": "SQL", "icon": "fa-solid fa-database", "class": "sc6" },
+        { "label": "Figma", "icon": "fa-brands fa-figma", "class": "sc3" },
+        {
+          "label": "StarUML",
+          "icon": "fa-solid fa-diagram-project",
+          "class": "sc4"
+        },
+        { "label": "Github", "icon": "fa-brands fa-github", "class": "sc4" }
+      ]
+    }
+  ]
+}
