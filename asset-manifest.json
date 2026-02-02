@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/portfolio-wiam/static/css/main.bc773d62.css",
+    "main.js": "/portfolio-wiam/static/js/main.a45d9046.js",
+    "static/js/453.fa730f15.chunk.js": "/portfolio-wiam/static/js/453.fa730f15.chunk.js",
+    "static/media/Bouncy-PERSONAL_USE_ONLY.otf": "/portfolio-wiam/static/media/Bouncy-PERSONAL_USE_ONLY.54d1106afa7de015345f.otf",
+    "static/media/Bouncy-Thin-PERSONAL_USE_ONLY.otf": "/portfolio-wiam/static/media/Bouncy-Thin-PERSONAL_USE_ONLY.e5d69a7334f2ac42145f.otf",
+    "static/media/cv3.pdf": "/portfolio-wiam/static/media/cv3.cc1b12f33940a5e5f677.pdf",
+    "static/media/img3.png": "/portfolio-wiam/static/media/img3.a5e3a772b98995404a52.png",
+    "index.html": "/portfolio-wiam/index.html",
+    "main.bc773d62.css.map": "/portfolio-wiam/static/css/main.bc773d62.css.map",
+    "main.a45d9046.js.map": "/portfolio-wiam/static/js/main.a45d9046.js.map",
+    "453.fa730f15.chunk.js.map": "/portfolio-wiam/static/js/453.fa730f15.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bc773d62.css",
+    "static/js/main.a45d9046.js"
+  ]
+}
