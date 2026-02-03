@@ -7,14 +7,17 @@ import Menu from "../../SVGs/Menu";
 import headerData from "../../Content/header.json";
 import { Outlet } from "react-router-dom";
 import "./header.css";
+
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const dispatch = useDispatch();
-
   const language = useSelector((state) => state.language);
 
   // Récupère les liens de navigation selon la langue actuelle
   const currentLinks = headerData.links_nav[language] || headerData.links_nav.en;
+
+  // Tableau des IDs correspondant aux sections
+  const sectionIds = ["home", "aboutme", "skills", "works", "services", "contact"];
 
   useEffect(() => {
     console.log(language);
@@ -32,7 +35,7 @@ export default function Header() {
   };
 
   const handleChangeLanguage = (newLang) => {
-    dispatch(update(newLang)); // Change la langue dans le store
+    dispatch(update(newLang));
   };
 
   return (
@@ -47,32 +50,29 @@ export default function Header() {
               className="row align-items-center w-100"
             >
               <motion.div className="col-lg-3 col-md-4 col-6 col1Nav">
-                <a href="/">
+                <a href="#home">
                   <img src={logo} alt="logo" />
                 </a>
               </motion.div>
+
               <motion.div
                 className="col-md-7 col-6 col2Nav"
-                initial={{ scale: 0 }}
-                whileInView={{ scale: 1 }}
-                transition={{ duration: 0.2 }}
+               initial={{ scale: 0 }}
+               whileInView={{ scale: 1 }}
+               transition={{ duration: 0.2 }}
               >
                 <ul className="navbar-nav">
-                  {currentLinks.map((link, index) => {
-                    const linkHref = link.replace(
-                      /\s+/g,
-                      ""
-                    );
-                    return (
-                      <li className="nav-item" key={index}>
-                        <a href={`#${linkHref}`}>
-                          {link.charAt(0).toUpperCase() + link.slice(1)}
-                        </a>
-                      </li>
-                    );
-                  })}
-                </ul>
+                  {currentLinks.map((link, index) => (
+                   <li className="nav-item" key={index}>
+                      <a href={`#${link.id}`}>
+                        {link.label}
+                     </a>
+                   </li>
+                  ))}
+               </ul>
               </motion.div>
+
+
               <div className="col-lg-2 col-md-8 col-6 col3Nav">
                 <div className="languages-change">
                   <p
@@ -99,6 +99,6 @@ export default function Header() {
         </nav>
       </header>
       <Outlet />
-     </>
+    </>
   );
 }

@@ -1,7 +1,7 @@
 {
   "name": "portfolio-wiam",
   "version": "0.1.0",
-  "homepage": "https://wiambabioui.github.io/portfolio-wiam",
+  
   "private": true,
   
   "dependencies": {

@@ -1,13 +1,20 @@
 {
   "links_nav": {
     "fr": [
-      "accueil",
-      "à propos",
-      "compétences",
-      "projets",
-      "services",
-      "contact"
+      { "label": "Accueil", "id": "home" },
+      { "label": "À propos", "id": "about" },
+      { "label": "Compétences", "id": "skills" },
+      { "label": "Projets", "id": "works" },
+      { "label": "Services", "id": "services" },
+      { "label": "Contact", "id": "formc" }
     ],
-    "en": ["home", "about me", "skills", "works", "services", "contact"]
+    "en": [
+      { "label": "Home", "id": "home" },
+      { "label": "About me", "id": "about" },
+      { "label": "Skills", "id": "skills" },
+      { "label": "Works", "id": "works" },
+      { "label": "Services", "id": "services" },
+      { "label": "Contact", "id": "formc" }
+    ]
   }
 }
