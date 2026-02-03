@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { update } from "../../Redux/Configuration/actions";
 import { motion } from "framer-motion";
@@ -16,11 +16,8 @@ export default function Header() {
   // Récupère les liens de navigation selon la langue actuelle
   const currentLinks = headerData.links_nav[language] || headerData.links_nav.en;
 
-  // Tableau des IDs correspondant aux sections
-  const sectionIds = ["home", "aboutme", "skills", "works", "services", "contact"];
-
   useEffect(() => {
-    console.log(language);
+    console.log("Current language:", language);
   }, [language]);
 
   const toggleMenu = () => {
@@ -49,30 +46,30 @@ export default function Header() {
               transition={{ duration: 0.5, type: "spring" }}
               className="row align-items-center w-100"
             >
+              {/* Logo */}
               <motion.div className="col-lg-3 col-md-4 col-6 col1Nav">
                 <a href="#home">
                   <img src={logo} alt="logo" />
                 </a>
               </motion.div>
 
+              {/* Liens de navigation */}
               <motion.div
                 className="col-md-7 col-6 col2Nav"
-               initial={{ scale: 0 }}
-               whileInView={{ scale: 1 }}
-               transition={{ duration: 0.2 }}
+                initial={{ scale: 0 }}
+                whileInView={{ scale: 1 }}
+                transition={{ duration: 0.2 }}
               >
                 <ul className="navbar-nav">
                   {currentLinks.map((link, index) => (
-                   <li className="nav-item" key={index}>
-                      <a href={`#${link.id}`}>
-                        {link.label}
-                     </a>
-                   </li>
+                    <li className="nav-item" key={index}>
+                      <a href={`#${link.id}`}>{link.label}</a>
+                    </li>
                   ))}
-               </ul>
+                </ul>
               </motion.div>
 
-
+              {/* Changement de langue + menu */}
               <div className="col-lg-2 col-md-8 col-6 col3Nav">
                 <div className="languages-change">
                   <p
