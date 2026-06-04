@@ -4,13 +4,13 @@
     "fr": "Contact"
   },
   "desc": {
-    "en": "I’m currently available for freelance work",
-    "fr": "Je suis actuellement disponible pour des missions freelance"
-  },
-  "para": {
-    "en": "Let's <span>talk</span> for somethings special",
-    "fr": "Viens <span>discuter</span> de quelque chose de spécial"
-  },
+  "en": "Available for company opportunities & freelance missions.",
+  "fr": "Disponible pour des opportunités en entreprise & des missions freelance."
+},
+ "para": {
+  "en": "Let's <span>build</span> something exceptional together",
+  "fr": "Viens <span>construire</span> quelque chose d'exceptionnel ensemble"
+},
   "nom": {
     "label": {
       "en": "Your name",

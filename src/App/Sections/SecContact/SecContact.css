@@ -1,7 +1,7 @@
 :root {
   --bg1: #000;
   --white: #fff;
-  --color-1:  #ff2f7d;
+  --color-1: #ff2f7d;
   --color-2: #f7bcf7;
   --color-3: #f9dbbb;
   --color-4: #4e6e81;
@@ -9,32 +9,39 @@
 }
 
 #contact h5 {
-  color: #e8f9fd;
+  color: var(--text-main);
   font-family: "IBM Plex Mono";
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  transition: color 0.3s ease;
 }
+
+/* DISCUTER dark : blanc → rose */
 #contact h5 span {
   font-family: Frijole;
   letter-spacing: 2.88px;
-  color: white;
-  animation: colorPulse 2s infinite alternate;
+  animation: colorPulseDark 2s infinite alternate;
 }
 
-@keyframes colorPulse {
-  0% {
-    color: white;
-  }
-
-  50% {
-    color: #f9dbbb;
-  }
-  100% {
-    color: #ff2f7d;
-  }
+@keyframes colorPulseDark {
+  0%   { color: white; }
+  50%  { color: #f9dbbb; }
+  100% { color: #ff2f7d; }
 }
+
+/* DISCUTER light : noir → rose → noir */
+[data-theme="light"] #contact h5 span {
+  animation: colorPulseLight 2s infinite alternate;
+}
+
+@keyframes colorPulseLight {
+  0%   { color: #111111; }
+  50%  { color: #ff2f7d; }
+  100% { color: #111111; }
+}
+
 .row-form {
   display: flex;
   align-items: center;
@@ -66,7 +73,8 @@
   border-bottom: 2px solid #ff2f7d;
   background-color: transparent;
   outline: none;
-  color: white;
+  color: var(--text-main);
+  transition: color 0.3s ease;
 }
 .form-group textarea {
   display: flex;
@@ -80,8 +88,9 @@
   border-bottom: 2px solid #ff2f7d;
   background-color: transparent;
   outline: none;
-  color: white;
+  color: var(--text-main);
   resize: none;
+  transition: color 0.3s ease;
 }
 .form-group input:focus {
   background-color: transparent;
@@ -123,50 +132,28 @@
   display: flex;
   gap: 10px;
 }
+.heuzhfub .link-icon a {
+  color: var(--text-main);
+  transition: color 0.3s ease;
+}
+
 @media screen and (max-width: 576px) {
-  #contact h5 {
-    text-align: center;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: normal;
-  }
-  .row-form {
-    display: flex;
-    flex-direction: column !important;
-    gap: 30px;
-  }
-  .heuzhfub {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-  }
-  .formContact {
-    padding-top: 50px;
-  }
+  #contact h5 { text-align: center; font-size: 48px; font-weight: 700; line-height: normal; }
+  .row-form { flex-direction: column !important; gap: 30px; }
+  .heuzhfub { display: flex; gap: 10px; justify-content: center; }
+  .formContact { padding-top: 50px; }
 }
 @media screen and (min-width: 576px) and (max-width: 768px) {
-  #contact h5 {
-    text-align: center;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: normal;
-  }
-  .heuzhfub {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-  }
-  .formContact {
-    padding-top: 50px;
-  }
+  #contact h5 { text-align: center; font-size: 48px; font-weight: 700; line-height: normal; }
+  .heuzhfub { display: flex; gap: 10px; justify-content: center; }
+  .formContact { padding-top: 50px; }
 }
 @media screen and (min-width: 769px) and (max-width: 1010px) {
-  #contact h5 {
-    color: #e8f9fd;
-    font-family: "IBM Plex Mono";
-    font-size: 35.706px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
+  #contact h5 { font-family: "IBM Plex Mono"; font-size: 35.706px; font-weight: 400; line-height: normal; }
+}
+
+/* Placeholder gris très foncé en mode clair */
+[data-theme="light"] .form-group input::placeholder,
+[data-theme="light"] .form-group textarea::placeholder {
+  color: #444444;
 }

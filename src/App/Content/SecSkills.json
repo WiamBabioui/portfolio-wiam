@@ -4,104 +4,104 @@
     "fr": "Compétences"
   },
   "desc": {
-    "en": "I am striving to never stop learning and improving",
-    "fr": "Je m'efforce de ne jamais cesser d'apprendre et de m'améliorer"
+    "en": "Continuously learning, evolving and mastering new technologies to deliver high-quality solutions.",
+    "fr": "En apprentissage continu, j'évolue et maîtrise de nouvelles technologies pour livrer des solutions de qualité."
   },
   "skills": [
     {
-      "title": {
-        "en": "Programming Languages",
-        "fr": "Langages de programmation"
-      },
+      "title": { "en": "Project Management", "fr": "Gestion de projet" },
+      "icon": "fa-solid fa-diagram-project",
+      "class": "s2",
+      "content": [
+        { "label": "Github", "icon": "fa-brands fa-github", "class": "sc4" },
+        { "label": "Jira", "icon": "fa-brands fa-jira", "class": "sc3" },
+        
+        { "label": "Gantt", "icon": "fa-solid fa-chart-gantt", "class": "sc2" },
+        { "label": "PERT", "icon": "fa-solid fa-diagram-project", "class": "sc2" },
+        { "label": "SCRUM", "icon": "fa-solid fa-people-group", "class": "sc5" },
+        { "label": "PowerPoint", "icon": "fa-solid fa-display", "class": "sc6" },
+         { "label": "Excel", "icon": "fa-solid fa-table", "class": "sc4" },
+        { "label": "Word", "icon": "fa-brands fa-microsoft", "class": "sc2" },
+       
+        
+        
+        { "label": "MPM", "icon": "fa-solid fa-network-wired", "class": "sc4" }
+      ]
+    },
+    {
+      "title": { "en": "Design & Modeling", "fr": "Design & Modélisation" },
+      "icon": "fa-solid fa-layer-group",
+      "class": "s6",
+      "content": [
+        { "label": "Figma", "icon": "fa-brands fa-figma", "class": "sc3" },
+        { "label": "Visily", "icon": "fa-solid fa-pen-ruler", "class": "sc5" },
+        { "label": "StarUML", "icon": "fa-solid fa-diagram-project", "class": "sc4" },
+        { "label": "Stitch", "icon": "fa-solid fa-link", "class": "sc2" },
+        { "label": "Draw.io", "icon": "fa-solid fa-share-nodes", "class": "sc3" },
+        { "label": "Canva", "icon": "fa-solid fa-palette", "class": "sc1" }
+      ]
+    },
+    {
+      "title": { "en": "Languages", "fr": "Langages" },
       "icon": "fa-solid fa-code",
       "class": "s1",
       "content": [
         { "label": "HTML", "icon": "fa-brands fa-html5", "class": "sc1" },
         { "label": "CSS", "icon": "fa-brands fa-css3-alt", "class": "sc2" },
         { "label": "JavaScript", "icon": "fa-brands fa-js", "class": "sc3" },
-        { "label": "PHP", "icon": "fa-brands fa-php", "class": "sc4" },
+        { "label": "Java", "icon": "fa-brands fa-java", "class": "sc6" },
         { "label": "Python", "icon": "fa-brands fa-python", "class": "sc5" },
-        { "label": "SQL", "icon": "fa-solid fa-database", "class": "sc6" },
-        { "label": "MongoDB", "icon": "fa-solid fa-database", "class": "sc3" }
+        { "label": "PHP", "icon": "fa-brands fa-php", "class": "sc4" },
+        
+        
+        { "label": "MongoDB", "icon": "fa-solid fa-leaf", "class": "sc4" },
+        { "label": "SQL", "icon": "fa-solid fa-database", "class": "sc6" }
+        
       ]
     },
     {
-      "title": {
-        "en": "Frameworks ",
-        "fr": "Frameworks "
-      },
-      "icon": "fa-solid fa-layer-group",
-      "class": "s2",
+      "title": { "en": "Frameworks & Libraries", "fr": "Frameworks & Librairies" },
+      "icon": "fa-solid fa-pencil",
+      "class": "s5",
       "content": [
-        {
-          "label": "Laravel 12",
-          "icon": "fa-brands fa-laravel",
-          "class": "sc6"
-        },
         { "label": "ReactJs", "icon": "fa-brands fa-react", "class": "sc4" },
-        {
-          "label": "Bootstrap",
-          "icon": "fa-brands fa-bootstrap",
-          "class": "sc3"
-        },
-        { "label": "Tailwind", "icon": "fa-solid fa-wind", "class": "sc6" },
-        { "label": "NodeJs", "icon": "fa-brands fa-node-js", "class": "sc3" },
-        { "label": "ExpressJs", "icon": "fa-solid fa-server", "class": "sc5" }
+        { "label": "Bootstrap", "icon": "fa-brands fa-bootstrap", "class": "sc3" },
+        { "label": "Tailwind", "icon": "fa-solid fa-wind", "class": "sc2" },
+        { "label": "Laravel 12", "icon": "fa-brands fa-laravel", "class": "sc6" },
+        
+        { "label": "ExpressJs", "icon": "fa-solid fa-server", "class": "sc5" },
+        { "label": "NodeJs", "icon": "fa-brands fa-node-js", "class": "sc4" }
+        
+        
       ]
     },
     {
-      "title": {
-        "en": "Design & modelisation",
-        "fr": "Design & modélisation"
-      },
-      "icon": "fa-solid fa-pencil-ruler",
+      "title": { "en": "Testing & Quality", "fr": "Tests & Qualité" },
+      "icon": "fa-solid fa-vial",
       "class": "s3",
       "content": [
-        { "label": "Figma", "icon": "fa-brands fa-figma", "class": "sc3" },
-        {
-          "label": "StarUML",
-          "icon": "fa-solid fa-diagram-project",
-          "class": "sc4"
-        },
-        {
-          "label": "Adobe Illustrator",
-          "icon": "fa-solid fa-pen-nib",
-          "class": "sc2"
-        },
-        { "label": "Balsamiq", "icon": "fa-solid fa-sitemap", "class": "sc5" }
+        { "label": "Jest", "icon": "fa-solid fa-bolt", "class": "sc5" },
+        { "label": "Selenium", "icon": "fa-solid fa-robot", "class": "sc4" },
+        { "label": "Cypress", "icon": "fa-solid fa-check-double", "class": "sc1" },
+        
+        { "label": "PHPUnit", "icon": "fa-solid fa-vial", "class": "sc2" },
+        { "label": "xUnit", "icon": "fa-solid fa-flask", "class": "sc3" },
+        { "label": "Postman", "icon": "fa-solid fa-paper-plane", "class": "sc6" },
+        { "label": "SonarQube", "icon": "fa-solid fa-shield-halved", "class": "sc6" }
       ]
     },
     {
-      "title": {
-        "en": "Project Management",
-        "fr": "Gestion du projet"
-      },
-      "icon": "fa-solid fa-diagram-project",
+      "title": { "en": "DevOps & Deployment", "fr": "DevOps & Déploiement" },
+      "icon": "fa-solid fa-cloud-arrow-up",
       "class": "s4",
       "content": [
-        { "label": "Github", "icon": "fa-brands fa-github", "class": "sc4" },
-        { "label": "Jira", "icon": "fa-brands fa-jira", "class": "sc3" },
-        {
-          "label": "Gantt Project",
-          "icon": "fa-solid fa-chart-gantt",
-          "class": "sc2"
-        },
-        {
-          "label": "SCRUM",
-          "icon": "fa-solid fa-people-group",
-          "class": "sc5"
-        },
-        {
-          "label": "DevOPS",
-          "icon": "fa-solid fa-code",
-          "class": "sc1"
-        },
-        {
-          "label": "SonarQube",
-          "icon": "fa-brands fa-sonarqube",
-          "class": "sc4"
-        },
-        { "label": "Pert", "icon": "fa-solid fa-network-wired", "class": "sc3" }
+        { "label": "Vercel", "icon": "fa-solid fa-rocket", "class": "sc1" },
+        { "label": "Docker", "icon": "fa-brands fa-docker", "class": "sc2" },
+        { "label": "Aiven", "icon": "fa-solid fa-database", "class": "sc6" },
+        { "label": "GitHub Actions", "icon": "fa-solid fa-gear", "class": "sc3" },
+        { "label": "Railway", "icon": "fa-solid fa-train", "class": "sc5" },
+        { "label": "CI/CD", "icon": "fa-solid fa-code-branch", "class": "sc4" },
+        { "label": "Render", "icon": "fa-solid fa-rocket", "class": "sc1" }
       ]
     }
   ]

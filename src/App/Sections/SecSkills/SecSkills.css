@@ -1,103 +1,140 @@
+/* ===== CARD ===== */
 .card-skills {
-  background: rgba(68, 68, 68, 0.493);
+  background: var(--bg-card);
+  border-radius: 18px;
+  border: 1.5px solid rgba(255, 255, 255, 0.08);
   height: 100%;
-  box-shadow: 0px 0px 0px 0px rgba(125, 56, 56, 0.25);
-  border-radius: 15px;
-  transition: 0.5s;
-  border: 2px solid;
+  transition: all 0.4s ease;
+  overflow: hidden;
+  position: relative;
+}
+.card-skills::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(255,47,125,0.04), transparent);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.card-skills:hover {
+  transform: translateY(-6px);
+  border: 1.5px solid #ff2f7d;
+  box-shadow: 0 8px 30px rgba(255, 47, 125, 0.2);
+}
+.card-skills:hover::before {
+  opacity: 1;
 }
 
-.card-skills:hover {
-  scale: 1.1;
-  border: 2px solid   #ff2f7d;
-}
-.card-skills:hover .card-body div {
-  /* background-color: rgb(223, 154, 18); */
-}
-.s1 {
-  background-color: #86efac;
-}
-.s2 {
-  background-color: #c2e720;
-}
-.s3 {
-  background-color: #1a5ad8;
-}
-.s4 {
-  background-color: #b02076;
-}
+/* ===== HEADER ===== */
 .card-skills .card-header {
   display: flex;
   align-items: center;
-  /* justify-content: center; */
-  min-height: 70px;
-  gap: 15px;
+  gap: 14px;
+  padding: 18px 20px;
+  background: transparent;
+  border: none;
+}
+.skill-icon-wrap {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.skill-icon-wrap i {
+  font-size: 20px;
+  color: #000;
 }
 .card-skills .card-header span {
-  color: white;
-  font-weight: bold;
+  color: var(--text-main);
+  font-family: "IBM Plex Mono";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.3;
+  transition: color 0.3s ease;
 }
-.card-skills .card-header i {
-  padding: 10px;
-  font-size: 18px;
-  border-radius: 10px;
-  color: black;
-  font-weight: bold;
+
+/* icônes couleurs */
+.s1 { background-color: #86efac; }
+.s2 { background-color: #fca5a5; }
+.s3 { background-color: #60a5fa; }
+.s4 { background-color: #f472b6; }
+.s5 { background-color: #fda359; }
+.s6 { background-color: #a78bfa; }
+
+/* ===== DIVIDER ===== */
+.skill-divider {
+  height: 1px;
+  margin: 0 20px;
+  background: linear-gradient(90deg, transparent, rgba(255,47,125,0.3), transparent);
 }
+
+/* ===== BODY ===== */
 .card-skills .card-body {
   display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 16px 20px 20px;
+  align-content: flex-start;
+}
+
+/* ===== BADGES ===== */
+.skill-badge {
+  display: inline-flex;
   align-items: center;
-  /* justify-content: center; */
-  flex-direction: column;
-  gap: 5px;
-  padding: 10px;
+  gap: 6px;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-family: "IBM Plex Mono";
+  font-size: 11px;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: transform 0.2s ease;
 }
-.card-skills .card-body div {
-  background-color: black;
-  width: 100%;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-  padding: 5px;
+.skill-badge:hover {
+  transform: scale(1.08);
 }
-.card-skills .card-body div p {
-  margin: 0;
-  padding: 3px 10px;
-  border-radius: 10px;
-  font-size: 10px;
-}
-.sc1 {
-  background-color: rgba(220, 38, 38, 0.2);
-  color: #fca5a5;
+.skill-badge i {
+  font-size: 11px;
 }
 
-.sc2,
-.sc6 {
-  background-color: rgba(6, 182, 212, 0.2);
-  color: #67e8f9;
+/* couleurs badges */
+.sc1 { background-color: rgba(220, 38, 38, 0.15); color: #fca5a5; border: 1px solid rgba(220,38,38,0.25); }
+.sc2 { background-color: rgba(6, 182, 212, 0.15); color: #67e8f9; border: 1px solid rgba(6,182,212,0.25); }
+.sc3 { background-color: rgba(147, 51, 234, 0.15); color: #c4b5fd; border: 1px solid rgba(147,51,234,0.25); }
+.sc4 { background-color: rgba(34, 197, 94, 0.15); color: #86efac; border: 1px solid rgba(34,197,94,0.25); }
+.sc5 { background-color: rgba(236, 72, 153, 0.15); color: #f9a8d4; border: 1px solid rgba(236,72,153,0.25); }
+.sc6 { background-color: rgba(249, 115, 22, 0.15); color: #fdba74; border: 1px solid rgba(249,115,22,0.25); }
+
+/* ===== MODE CLAIR ===== */
+[data-theme="light"] .card-skills {
+  background: #ffffff;
+  border: 1.5px solid rgba(0,0,0,0.08);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+[data-theme="light"] .card-skills:hover {
+  border: 1.5px solid #ff2f7d;
+  box-shadow: 0 8px 30px rgba(255,47,125,0.15);
+}
+[data-theme="light"] .skill-divider {
+  background: linear-gradient(90deg, transparent, rgba(255,47,125,0.2), transparent);
+}
+.skill-badge.bounce {
+  animation: badgeBounce 0.5s ease;
 }
 
-.sc3 {
-  background-color: rgba(147, 51, 234, 0.2);
-  color: #c4b5fd;
+/* ===== BOUNCE ANIMATION ===== */
+.skill-badge.bounce {
+  animation: badgeBounce 0.5s ease !important;
 }
 
-.sc4 {
-  background-color: rgba(34, 197, 94, 0.2);
-  color: #86efac;
-}
-
-.sc5 {
-  background-color: rgba(236, 72, 153, 0.2);
-  color: #f9a8d4;
-}
-
-@media screen and (max-width: 576px) {
-}
-@media screen and (min-width: 576px) and (max-width: 768px) {
-}
-
-@media screen and (min-width: 769px) and (max-width: 1010px) {
+@keyframes badgeBounce {
+  0%   { transform: translateY(0) scale(1); }
+  25%  { transform: translateY(-25px) scale(1.2); }
+  50%  { transform: translateY(0) scale(0.9); }
+  75%  { transform: translateY(-12px) scale(1.1); }
+  100% { transform: translateY(0) scale(1); }
 }

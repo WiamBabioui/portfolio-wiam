@@ -1,8 +1,8 @@
 {
-  "titre1": {
-    "en": "Hello, my name is <span>Wiam Babioui</span>, I’m a <span>Full-stack</span> Developer",
-    "fr": "Bonjour, je m'appelle <span>Wiam Babioui</span>, je suis une <span>Développeuse Full-stack</span>"
-  },
+ "titre1": {
+  "en": "Hello, I'm <br/> <span>Wiam Babioui</span>,<br/>a <span>Full-Stack </span> & <span>MERN Stack</span> Developer",
+  "fr": "Bonjour, je suis <br/><span>Wiam Babioui</span>,<br/>Développeuse <span>Full-Stack</span> & <span>MERN Stack</span>"
+},
   "contact_btn": {
     "en": "Get in touch",
     "fr": "Contactez-moi"

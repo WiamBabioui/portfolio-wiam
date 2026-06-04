@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { update } from "../../Redux/Configuration/actions";
+import { update, updateTheme } from "../../Redux/Configuration/actions";
 import { motion } from "framer-motion";
-import logo from "../../images/logo27.png";
+import logoDark from "../../images/logo27.png";
+import logoLight from "../../images/logo27white.png";
 import Menu from "../../SVGs/Menu";
 import headerData from "../../Content/header.json";
 import { Outlet } from "react-router-dom";
@@ -12,13 +13,23 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const dispatch = useDispatch();
   const language = useSelector((state) => state.language);
+  const theme = useSelector((state) => state.theme);
+  const isDark = theme === "dark";
 
-  // Récupère les liens de navigation selon la langue actuelle
   const currentLinks = headerData.links_nav[language] || headerData.links_nav.en;
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+    localStorage.setItem("theme", theme);
+  }, [theme]);
 
   useEffect(() => {
     console.log("Current language:", language);
   }, [language]);
+
+  const toggleTheme = () => {
+    dispatch(updateTheme(isDark ? "light" : "dark"));
+  };
 
   const toggleMenu = () => {
     const navLink = document.getElementsByClassName("col2Nav")[0];
@@ -49,7 +60,7 @@ export default function Header() {
               {/* Logo */}
               <motion.div className="col-lg-3 col-md-4 col-6 col1Nav">
                 <a href="#home">
-                  <img src={logo} alt="logo" />
+                  <img src={isDark ? logoDark : logoLight} alt="logo" className="header-logo" />
                 </a>
               </motion.div>
 
@@ -69,7 +80,7 @@ export default function Header() {
                 </ul>
               </motion.div>
 
-              {/* Changement de langue + menu */}
+              {/* Langue + thème + menu */}
               <div className="col-lg-2 col-md-8 col-6 col3Nav">
                 <div className="languages-change">
                   <p
@@ -86,6 +97,10 @@ export default function Header() {
                     ENG
                   </p>
                 </div>
+
+                <button className="theme-toggle-btn" onClick={toggleTheme} title="Changer le thème">
+                  {isDark ? <i className="fa-solid fa-moon"></i> : <i className="fa-solid fa-sun"></i>}
+                </button>
 
                 <button className="btn" onClick={toggleMenu}>
                   <Menu />

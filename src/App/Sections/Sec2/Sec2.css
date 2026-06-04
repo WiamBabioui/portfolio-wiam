@@ -13,17 +13,16 @@
   height: auto;
 }
 .card-n2 h3 {
-  color:  #ff2f7d ;  
+  color: #ff2f7d;
   font-family: "IBM Plex Mono";
   font-size: 25px;
   font-style: normal;
   font-weight: 700;
-  line-height: 26px; /* 81.25% */
+  line-height: 26px;
   letter-spacing: 0.32px;
 }
-
 .card-n2 p {
-  color: #fff;
+  color: var(--text-main);
   font-family: "IBM Plex Mono";
   font-size: 14px;
   font-style: normal;
@@ -31,10 +30,10 @@
   line-height: 26px;
   text-align: justify;
   letter-spacing: 0.16px;
+  transition: color 0.3s ease;
 }
-
 .card-n2 p span {
-  color: #f7bcf7;
+  color: #ee84fc;
   font-family: "IBM Plex Mono";
   font-style: normal;
   font-weight: 700;
@@ -43,21 +42,12 @@
 }
 
 @media screen and (max-width: 576px) {
-  .row-about {
-    flex-direction: column-reverse;
-  }
-  .card-n2 p {
-    font-size: 12.5px;
-  }
+  .row-about { flex-direction: column-reverse; }
+  .card-n2 p { font-size: 12.5px; }
 }
 @media screen and (min-width: 576px) and (max-width: 768px) {
-  .row-about {
-    flex-direction: column-reverse;
-  }
+  .row-about { flex-direction: column-reverse; }
 }
-
 @media screen and (min-width: 769px) and (max-width: 1010px) {
-  .row-about {
-    flex-direction: column-reverse;
-  }
+  .row-about { flex-direction: column-reverse; }
 }

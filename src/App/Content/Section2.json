@@ -4,15 +4,15 @@
     "fr": "À propos de moi"
   },
   "desc": {
-    "en": "I’m a full-stack developer, providing diverse services with optimal performance",
-    "fr": "Je suis une développeuse full-stack, offrant des services variés avec une performance optimale"
+    "en": "Full-Stack Developer passionate about transforming ideas into powerful, elegant and scalable web solutions.",
+    "fr": "Développeuse Full-Stack passionnée, je transforme des idées en solutions web performantes, élégantes et scalables."
   },
   "para_title": {
     "en": "Hello",
     "fr": "Bonjour"
   },
   "para_content": {
-    "en": "My name is <span>Wiam Babioui</span>, and I am a passionate full-stack web developer with expertise in <span>HTML</span>, <span>CSS</span>, <span>JavaScript</span>, <span>PHP</span>, <span>Python</span>, <span>Laravel</span>, <span>Nodejs</span>, and <span>React</span>. I am highly motivated and relentlessly optimistic, committed to writing clean, efficient, and reliable code. I constantly seek opportunities to learn, grow, and push my limits. Beyond coding, I find joy in <span>writing blogs</span>, reading thought-provoking books, and engaging in creative projects such as <span>photography</span>. I value challenges that broaden my horizons and reshape the way I see the world.",
-    "fr": "Je m'appelle <span>Wiam Babioui</span>, et je suis une développeuse web full-stack passionnée, spécialisée en <span>HTML</span>, <span>CSS</span>, <span>JavaScript</span>, <span>PHP</span>, <span>Python</span>, <span>Laravel</span>, <span>Nodejs</span> et <span>React</span>. Très motivée et éternellement optimiste, je m'engage à écrire un code propre, efficace et fiable. Je cherche constamment à apprendre, évoluer et repousser mes limites. En dehors du développement, j'aime <span>écrire des blogs</span>, lire des ouvrages inspirants et me consacrer à des projets créatifs comme la <span>photographie</span>. J'apprécie les défis qui élargissent mes horizons et transforment ma manière de voir le monde."
+    "en": "My name is <span>Wiam Babioui</span>, a passionate <span>Full-Stack</span> and <span>MERN Stack</span> web developer. I cover the entire development lifecycle — from <span>UML diagrams</span> and <span>UI/UX design</span> with Figma, to <span>front-end</span> and <span>back-end</span> development, <span>automated testing</span> with Jest, Selenium and PHPUnit, <span>CI/CD pipelines</span> with YAML and GitHub Actions, and <span>cloud deployment</span> on Vercel, Railway and Docker. I am committed to writing clean, tested and maintainable code, while continuously learning and pushing my limits every day.",
+    "fr": "Je m'appelle <span>Wiam Babioui</span>, développeuse web <span>Full-Stack</span> et <span>MERN Stack</span> passionnée. Je couvre l'intégralité du cycle de développement — de la <span>conception UML</span> et du <span>design UI/UX</span> avec Figma, au développement <span>front-end</span> et <span>back-end</span>, en passant par les <span>tests automatisés</span> avec Jest, Selenium et PHPUnit, les pipelines <span>CI/CD</span> avec YAML et GitHub Actions, et le <span>déploiement cloud</span> sur Vercel, Railway et Docker. Je m'engage à livrer un code propre, testé et maintenable, tout en apprenant et en évoluant constamment chaque jour."
   }
 }

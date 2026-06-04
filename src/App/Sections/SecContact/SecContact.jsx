@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { useSelector } from "react-redux";
 import TitleSections from "../../Components/TitleSection/TitleSection";
 import data from "../../Content/SecContact.json";
+import emailjs from "@emailjs/browser";
 
 const SecContact = () => {
   const language = useSelector((state) => state.language);
@@ -22,22 +23,10 @@ const SecContact = () => {
   const btnSend = data.btn_send[language] || data.btn_send.en;
 
   const links = [
-    {
-      icon: "fa-brands fa-github",
-      link: "https://github.com/WiamBabioui",
-    },
-    {
-      icon: "fa-solid fa-envelope",
-      link: "mailto:babiouiwiam33@gmail.com",
-    },
-    {
-      icon: "fa-solid fa-phone",
-      link: "tel:0710427747",
-    },
-    {
-      icon: "fa-brands fa-linkedin",
-      link: "https://www.linkedin.com/in/wiam-babioui-3003b2006w33/",
-    },
+    { icon: "fa-brands fa-github", link: "https://github.com/WiamBabioui" },
+    { icon: "fa-solid fa-envelope", link: "mailto:babiouiwiam33@gmail.com" },
+    { icon: "fa-solid fa-phone", link: "tel:0710427747" },
+    { icon: "fa-brands fa-linkedin", link: "https://www.linkedin.com/in/wiam-babioui-3003b2006w33/" },
   ];
 
   const handleform = (e) => {
@@ -54,21 +43,44 @@ const SecContact = () => {
       emailRegex.test(emailValue);
 
     if (isValid) {
-      Swal.fire({
-        position: "center",
-        icon: "success",
-        title: "Your message has been sent",
-        showConfirmButton: false,
-        timer: 1500,
-        background: "#292f36",
-        color: "#fff",
+      // Envoyer avec EmailJS
+      emailjs.send(
+        "service_1y2f21g",
+        "template_yi1zalr",
+        {
+          from_name: nameValue,
+          from_email: emailValue,
+          message: messageValue,
+        },
+        "WdFqMWylUEzLb-g6v"
+      )
+      .then(() => {
+        Swal.fire({
+          position: "center",
+          icon: "success",
+          title: language === "fr" ? "Message envoyé avec succès !" : "Message sent successfully!",
+          showConfirmButton: false,
+          timer: 2000,
+          background: "#292f36",
+          color: "#fff",
+        });
+        document.getElementsByTagName("form")[0].reset();
+      })
+      .catch(() => {
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: language === "fr" ? "Erreur lors de l'envoi. Réessayez." : "Failed to send. Please try again.",
+          background: "#292f36",
+          color: "#fff",
+        });
       });
-      document.getElementsByTagName("form")[0].reset();
+
     } else {
       Swal.fire({
         icon: "error",
         title: "Oops...",
-        text: "Please fill in all fields correctly!",
+        text: language === "fr" ? "Veuillez remplir tous les champs correctement !" : "Please fill in all fields correctly!",
         background: "#292f36",
         color: "#fff",
       });

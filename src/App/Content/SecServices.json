@@ -4,21 +4,10 @@
     "fr": "Services"
   },
   "desc": {
-    "en": "I can provide multiple services with high performance",
-    "fr": "Je propose plusieurs services avec des performances élevées"
+    "en": "From design to deployment, I deliver complete, reliable and high-performance web solutions.",
+    "fr": "De la conception au déploiement, je livre des solutions web complètes, fiables et hautement performantes."
   },
   "services": [
-    {
-      "icon": "fa-solid fa-code",
-      "label": {
-        "en": "Web Dev",
-        "fr": "Développement Web"
-      },
-      "description": {
-        "en": "I can create dynamic, responsive websites with a focus on scalability and user experience.",
-        "fr": "Je développe des sites web dynamiques et responsives, en mettant l'accent sur la scalabilité et l'expérience utilisateur."
-      }
-    },
     {
       "icon": "fa-solid fa-paint-brush",
       "label": {
@@ -26,30 +15,63 @@
         "fr": "Design Web"
       },
       "description": {
-        "en": "I design visually appealing, user-friendly websites that ensure an intuitive experience",
-        "fr": "Je conçois des sites web esthétiques et conviviaux, garantissant une expérience intuitive pour l'utilisateur."
+        "en": "I design modern, responsive and intuitive interfaces that deliver a great user experience across all devices.",
+        "fr": "Je conçois des interfaces modernes, responsives et intuitives qui offrent une excellente expérience utilisateur sur tous les appareils."
       }
     },
     {
-      "icon": "fa-solid fa-chart-line",
+      "icon": "fa-solid fa-code",
       "label": {
-        "en": "Data Analyst",
-        "fr": "Analyse de Données"
+        "en": "Web Development",
+        "fr": "Développement Web"
       },
       "description": {
-        "en": "I analyze complex datasets to extract meaningful insights, create visual dashboards, and support data-driven decision-making.",
-        "fr": "J’analyse des ensembles de données complexes pour en extraire des informations utiles, créer des tableaux de bord visuels et soutenir la prise de décisions basées sur les données."
+        "en": "I build secure, scalable and elegant full-stack & MERN stack applications with a strong focus on performance and user experience.",
+        "fr": "Je développe des applications full-stack et MERN stack sécurisées, scalables et élégantes, avec un fort accent sur la performance et l'expérience utilisateur."
       }
     },
     {
-      "icon": "fa-brands fa-wordpress",
+      "icon": "fa-solid fa-database",
       "label": {
-        "en": "Wordpress",
-        "fr": "WordPress"
+        "en": "Database Management",
+        "fr": "Base de Données"
       },
       "description": {
-        "en": "I build custom WordPress sites with tailored themes and plugins for enhanced functionality, including the use of ACF (Advanced Custom Fields).",
-        "fr": "Je crée des sites WordPress personnalisés avec des thèmes et des plugins sur mesure pour une fonctionnalité optimale, y compris l’utilisation d’ACF (Advanced Custom Fields)."
+        "en": "I design and manage SQL and NoSQL databases (MongoDB, MySQL) with a focus on security and performance.",
+        "fr": "Je conçois et gère des bases de données SQL et NoSQL (MongoDB, MySQL) avec un focus sur la sécurité et la performance."
+      }
+    },
+    {
+      "icon": "fa-solid fa-vial",
+      "label": {
+        "en": "Automated Testing",
+        "fr": "Tests Automatisés"
+      },
+      "description": {
+        "en": "I write unit, integration and end-to-end tests to ensure code quality, stability and reliability of your application.",
+        "fr": "Je rédige des tests unitaires, d'intégration et end-to-end pour garantir la qualité, la stabilité et la fiabilité de votre application."
+      }
+    },
+    {
+      "icon": "fa-solid fa-code-branch",
+      "label": {
+        "en": "CI/CD & DevOps",
+        "fr": "CI/CD & DevOps"
+      },
+      "description": {
+        "en": "I set up CI/CD pipelines with GitHub Actions to automate building, testing and deployment workflows.",
+        "fr": "Je mets en place des pipelines CI/CD avec GitHub Actions pour automatiser les processus de build, de test et de déploiement."
+      }
+    },
+    {
+      "icon": "fa-solid fa-cloud-arrow-up",
+      "label": {
+        "en": "Cloud Deployment",
+        "fr": "Déploiement Cloud"
+      },
+      "description": {
+        "en": "I deploy applications on Vercel, Railway, Aiven and Docker for fast, reliable and scalable production environments.",
+        "fr": "Je déploie des applications sur Vercel, Railway, Aiven et Docker pour des environnements de production rapides, fiables et scalables."
       }
     }
   ]

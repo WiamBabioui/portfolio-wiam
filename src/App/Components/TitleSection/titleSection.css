@@ -52,7 +52,7 @@
   }
 }
 .titleSection p {
-  color: var(--White, var(--White, #fff));
+  color: var(--text-main);
   text-align: center;
   font-family: "IBM Plex Mono";
   font-size: 16px;

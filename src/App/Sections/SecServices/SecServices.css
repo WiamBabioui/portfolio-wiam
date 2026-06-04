@@ -1,11 +1,10 @@
 .card-service {
   display: flex;
   align-items: center;
-  /* justify-content: center; */
   flex-direction: column;
   gap: 15px;
-  background: rgba(68, 68, 68, 0.493);
-  padding: 20px;
+  background: var(--bg-card);
+  padding: 30px 20px;
   border-radius: 15px;
   height: 100%;
   border: 2px solid;
@@ -23,32 +22,31 @@
 }
 .card-service i {
   font-size: 30px;
-  background: linear-gradient(
-    90deg,
-    #b51763 0%,   
-    #ff2f7d 40%,
-    #ffc1d9 100%
-  );
+  background: linear-gradient(90deg, #b51763 0%, #ff2f7d 40%, #ffc1d9 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
-  animation: gradient-x 2s linear infinite; /* Animation infinie */
+  animation: gradient-x 2s linear infinite;
 }
-
 @keyframes gradient-x {
-  0%,
-  100% {
-    background-size: 200% 200%;
-    background-position: left center;
-  }
-  50% {
-    background-size: 200% 200%;
-    background-position: right center;
-  }
+  0%, 100% { background-size: 200% 200%; background-position: left center; }
+  50% { background-size: 200% 200%; background-position: right center; }
 }
 .card-service p {
   margin: 0;
   text-align: center;
-  color: rgba(255, 255, 255, 0.409);
+  color: var(--text-muted);
+  transition: color 0.3s ease;
+}
+
+/* Mode clair : fond blanc, pas de bordure noire */
+[data-theme="light"] .card-service {
+  background: #ffffff;
+  border: none;
+}
+[data-theme="light"] .card-service:hover {
+  border: 2px solid #ff2f7d;
+}
+[data-theme="light"] .card-service h4 {
+  color: #f17bb4;
 }

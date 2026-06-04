@@ -4,8 +4,8 @@
     "fr": "Projets"
   },
   "desc": {
-    "en": "I had the pleasure of working on these awesome projects",
-    "fr": "J'ai eu le plaisir de travailler sur ces projets remarquables"
+    "en": "Code, creativity and passion — where ideas become reality.",
+    "fr": "Du code, de la créativité et de la passion — là où les idées deviennent réalité."
   },
   "works": [
     {
@@ -13,38 +13,107 @@
         "en": "Talib Job",
         "fr": "Talib Job"
       },
+      "link": "https://talibjob.onrender.com",
       "description": {
-        "en": "A web platform developed to connect students and companies, enabling account creation, job posting, application management, and tracking application status within a modern recruitment system.",
-        "fr": "Une application web développée pour gérer les événements au sein de la CMC Casablanca. Elle permet aux utilisateurs de consulter les événements, réserver des billets, et accéder aux détails des manifestations organisées."
+        "en": "A SaaS web platform designed to facilitate access to part-time job opportunities for students. It allows users to create an account, apply to flexible offers matching their schedules, and track application status, while companies can publish and manage their job listings.",
+        "fr": "Une plateforme web SaaS conçue pour faciliter l'accès aux opportunités de travail à temps partiel pour les étudiants. Elle permet de créer un compte, postuler aux offres adaptées à leur emploi du temps, et suivre l'état des candidatures, tandis que les entreprises peuvent publier et gérer leurs offres."
       },
       "imgs": [
         "/imgWorks/talib-job/img1.png",
         "/imgWorks/talib-job/img2.png",
         "/imgWorks/talib-job/img3.png",
-        "/imgWorks/talib-job/img4.png"
-        
+        "/imgWorks/talib-job/img4.png",
+        "/imgWorks/talib-job/img5.png",
+        "/imgWorks/talib-job/img6.png",
+        "/imgWorks/talib-job/img7.png"
       ],
       "technologies": [
-        {
-          "label": "Laravel 12",
-          "icon": "fa-brands fa-laravel",
-          "class": "sc6"
-        },
+        { "label": "Laravel 12", "icon": "fa-brands fa-laravel", "class": "sc6" },
         { "label": "ReactJs", "icon": "fa-brands fa-react", "class": "sc4" },
-        {
-          "label": "Bootstrap",
-          "icon": "fa-brands fa-bootstrap",
-          "class": "sc3"
-        },
+        { "label": "Bootstrap", "icon": "fa-brands fa-bootstrap", "class": "sc3" },
         { "label": "CSS", "icon": "fa-brands fa-css3-alt", "class": "sc2" },
+        { "label": "Tailwind", "icon": "fa-solid fa-wind", "class": "sc2" },
         { "label": "SQL", "icon": "fa-solid fa-database", "class": "sc6" },
-        { "label": "Figma", "icon": "fa-brands fa-figma", "class": "sc3" },
-        {
-          "label": "StarUML",
-          "icon": "fa-solid fa-diagram-project",
-          "class": "sc4"
-        },
-        { "label": "Github", "icon": "fa-brands fa-github", "class": "sc4" }
+        { "label": "PHPUnit", "icon": "fa-solid fa-vial", "class": "sc2" },
+        { "label": "Jest", "icon": "fa-solid fa-bolt", "class": "sc5" },
+        { "label": "Postman", "icon": "fa-solid fa-envelope", "class": "sc3" },
+        { "label": "Cypress", "icon": "fa-solid fa-c", "class": "sc4" },
+        { "label": "CI/CD", "icon": "fa-solid fa-infinity", "class": "sc6" },
+        { "label": "Docker", "icon": "fa-brands fa-docker", "class": "sc2" },
+        { "label": "GitHub Actions", "icon": "fa-solid fa-gear", "class": "sc3" },
+        { "label": "Draw.io", "icon": "fa-solid fa-diagram-project", "class": "sc2" },
+        { "label": "Aiven", "icon": "fa-solid fa-database", "class": "sc3" },
+        { "label": "Render", "icon": "fa-solid fa-rocket", "class": "sc5" }
+      ]
+    },
+    {
+      "title": {
+        "en": "Bricolage Connect",
+        "fr": "Bricolage Connect"
+      },
+      "link": "https://bricolage-connect.vercel.app",
+      "description": {
+        "en": "A SaaS web application developed to connect clients with home service professionals. It allows users to post service requests, browse available jobs, communicate in real time through messaging, and share photos to better explain their needs.",
+        "fr": "Une application web SaaS développée pour mettre en relation des clients avec des professionnels du bricolage. Elle permet de publier des demandes de services, consulter les missions disponibles, communiquer en temps réel via messagerie et partager des photos pour mieux expliquer les besoins."
+      },
+      "imgs": [
+        "/imgWorks/bricolage/i1.png",
+        "/imgWorks/bricolage/i2.png",
+        "/imgWorks/bricolage/i3.png",
+        "/imgWorks/bricolage/i4.png",
+        "/imgWorks/bricolage/i5.png",
+        "/imgWorks/bricolage/i6.png",
+        "/imgWorks/bricolage/i7.png"
+      ],
+      "technologies": [
+        { "label": "ReactJs", "icon": "fa-brands fa-react", "class": "sc4" },
+        { "label": "Bootstrap", "icon": "fa-brands fa-bootstrap", "class": "sc3" },
+        { "label": "CSS", "icon": "fa-brands fa-css3-alt", "class": "sc2" },
+        { "label": "Tailwind", "icon": "fa-solid fa-wind", "class": "sc2" },
+        { "label": "SQL", "icon": "fa-solid fa-database", "class": "sc6" },
+        { "label": "Node.js", "icon": "fa-brands fa-node-js", "class": "sc4" },
+        { "label": "Express.js", "icon": "fa-solid fa-server", "class": "sc6" },
+        { "label": "Github", "icon": "fa-brands fa-github", "class": "sc4" },
+        { "label": "Railway", "icon": "fa-solid fa-train", "class": "sc5" },
+        { "label": "Vercel", "icon": "fa-solid fa-rocket", "class": "sc1" },
+        { "label": "Aiven", "icon": "fa-solid fa-database", "class": "sc3" }
+      ]
+    },
+    {
+      "title": {
+        "en": "Cabinet_plus",
+        "fr": "Cabinet_plus"
+      },
+      "link": "https://cabinet-medical-plus.vercel.app/",
+      "description": {
+        "en": "A modern web SaaS platform for managing medical clinics and patient workflows. Enables appointment scheduling, patient record management, secure real-time communication, digital prescriptions, and role-based access for doctors, assistants, and patients, with a responsive and intuitive interface.",
+        "fr": "Plateforme SaaS web moderne de gestion de cabinet médical et des flux patients. Permet la prise de rendez-vous, la gestion des dossiers médicaux, la communication sécurisée en temps réel, la génération d’ordonnances numériques et un accès selon les rôles (médecin, assistante, patient), avec une interface intuitive et entièrement responsive."
+      },
+      "imgs": [
+        "/imgWorks/cabinet-plus/i1.png",
+        "/imgWorks/cabinet-plus/i2.png",
+        "/imgWorks/cabinet-plus/i3.png",
+        "/imgWorks/cabinet-plus/i4.png",
+        "/imgWorks/cabinet-plus/i5.png",
+        "/imgWorks/cabinet-plus/i6.png",
+        "/imgWorks/cabinet-plus/i7.png"
+      ],
+      "technologies": [
+        { "label": "ReactJs", "icon": "fa-brands fa-react", "class": "sc4" },
+        { "label": "Node.js", "icon": "fa-brands fa-node-js", "class": "sc4" },
+        { "label": "Express.js", "icon": "fa-solid fa-server", "class": "sc6" },
+        { "label": "SQL", "icon": "fa-solid fa-database", "class": "sc6" },
+        { "label": "MongoDB", "icon": "fa-solid fa-leaf", "class": "sc3" },
+        { "label": "CSS", "icon": "fa-brands fa-css3-alt", "class": "sc2" },
+        { "label": "Jira", "icon": "fa-brands fa-jira", "class": "sc5" },
+        { "label": "Bootstrap", "icon": "fa-brands fa-bootstrap", "class": "sc3" },
+        { "label": "Tailwind", "icon": "fa-solid fa-wind", "class": "sc2" },
+        { "label": "Github", "icon": "fa-brands fa-github", "class": "sc4" },
+        { "label": "Render", "icon": "fa-solid fa-rocket", "class": "sc5" },
+        { "label": "Postman", "icon": "fa-solid fa-envelope", "class": "sc3" },
+        { "label": "Aiven", "icon": "fa-solid fa-cloud", "class": "sc3" },
+        { "label": "CI/CD", "icon": "fa-solid fa-infinity", "class": "sc6" },
+        { "label": "GitHub Actions", "icon": "fa-solid fa-gear", "class": "sc3" }
       ]
     },
     {
@@ -52,76 +121,82 @@
         "en": "Playlist Manager",
         "fr": "Playlist Manager"
       },
+      "link": "https://playlist-manager-weld.vercel.app",
       "description": {
         "en": "A web application created to manage music playlists efficiently. It enables users to add tracks, organize collections, control playback, and enjoy a fully responsive interface.",
-        "fr": "Une application web développée pour gérer des playlists musicales efficacement. Elle permet aux utilisateurs d’ajouter des titres, organiser leurs collections, contrôler la lecture, et profiter d’une interface moderne, responsive et intuitive complète."
+        "fr": "Une application web développée pour gérer des playlists musicales efficacement. Elle permet aux utilisateurs d'ajouter des titres, organiser leurs collections, contrôler la lecture, et profiter d'une interface moderne, responsive et intuitive complète."
       },
       "imgs": [
         "/imgWorks/playlist-manager/i1.png",
         "/imgWorks/playlist-manager/i2.png",
         "/imgWorks/playlist-manager/i3.png",
-        "/imgWorks/playlist-manager/i4.png"
+        "/imgWorks/playlist-manager/i4.png",
+        "/imgWorks/playlist-manager/i5.png",
+        "/imgWorks/playlist-manager/i6.png",
+        "/imgWorks/playlist-manager/i7.png"
       ],
       "technologies": [
-        {
-          "label": "Laravel 12",
-          "icon": "fa-brands fa-laravel",
-          "class": "sc6"
-        },
         { "label": "ReactJs", "icon": "fa-brands fa-react", "class": "sc4" },
-        {
-          "label": "Bootstrap",
-          "icon": "fa-brands fa-bootstrap",
-          "class": "sc3"
-        },
+        { "label": "Bootstrap", "icon": "fa-brands fa-bootstrap", "class": "sc3" },
         { "label": "CSS", "icon": "fa-brands fa-css3-alt", "class": "sc2" },
-        { "label": "SQL", "icon": "fa-solid fa-database", "class": "sc6" },
-        { "label": "Figma", "icon": "fa-brands fa-figma", "class": "sc3" },
-        {
-          "label": "StarUML",
-          "icon": "fa-solid fa-diagram-project",
-          "class": "sc4"
-        },
+        { "label": "Tailwind", "icon": "fa-solid fa-wind", "class": "sc2" },
+        { "label": "Vercel", "icon": "fa-solid fa-rocket", "class": "sc1" },
         { "label": "Github", "icon": "fa-brands fa-github", "class": "sc4" }
       ]
     },
     {
       "title": {
-        "en": "Web Application for Library Management",
-        "fr": "Application Web pour la gestion d'une bibliothèque"
+        "en": "CakeIlhamD'or",
+        "fr": "CakeIlhamD'or"
       },
-      "description": {
-        "en": "A web application for library management, allowing users to reserve books for borrowing, check reservation statuses, and enabling the administrator to manage books and loan requests.",
-        "fr": "Une application web pour une bibliothèque, permettant aux utilisateurs de réserver des livres à emprunter, consulter l’état des réservations, et à l’administrateur de gérer les livres et les demandes de prêt."
-      },
-      "imgs": [
-        "/imgWorks/Maktabati/i1.png",
-        "/imgWorks/Maktabati/i2.png",
-        "/imgWorks/Maktabati/i3.png",
-        "/imgWorks/Maktabati/i4.png",
-        "/imgWorks/Maktabati/i5.png",
-        "/imgWorks/Maktabati/i6.png"
+      "link": "https://cake-ilham-dor.vercel.app/",
+       "description": {
+        "en": "A bilingual (French / Arabic) web application built for a Moroccan artisan pastry shop. It allows customers to browse creations including design cakes and Moroccan pastries, view detailed product pages, and place orders directly through WhatsApp. The interface is modern, fully responsive, and features a language switcher with complete RTL support.",
+        "fr": "Un site web bilingue (français / arabe) développé pour une pâtisserie artisanale marocaine. Il permet aux clients de découvrir les créations cakes design et gâteaux marocains, de consulter les détails de chaque produit, et de passer commande directement via WhatsApp. L'interface est moderne, entièrement responsive, et intègre un système de changement de langue avec support RTL complet."
+       },
+        "imgs": [
+        "/imgWorks/cake-ilham/i1.png",
+        "/imgWorks/cake-ilham/i2.png",
+        "/imgWorks/cake-ilham/i3.png",
+        "/imgWorks/cake-ilham/i4.png",
+        "/imgWorks/cake-ilham/i5.png",
+        "/imgWorks/cake-ilham/i6.png",
+        "/imgWorks/cake-ilham/i7.png"
       ],
       "technologies": [
-        {
-          "label": "Laravel 12",
-          "icon": "fa-brands fa-laravel",
-          "class": "sc6"
-        },
         { "label": "ReactJs", "icon": "fa-brands fa-react", "class": "sc4" },
-        {
-          "label": "Bootstrap",
-          "icon": "fa-brands fa-bootstrap",
-          "class": "sc3"
-        },
+        { "label": "Bootstrap", "icon": "fa-brands fa-bootstrap", "class": "sc3" },
         { "label": "CSS", "icon": "fa-brands fa-css3-alt", "class": "sc2" },
-        { "label": "SQL", "icon": "fa-solid fa-database", "class": "sc6" },
-        { "label": "Figma", "icon": "fa-brands fa-figma", "class": "sc3" },
-        {
-          "label": "StarUML",
-          "icon": "fa-solid fa-diagram-project",
-          "class": "sc4"
-        },
+        { "label": "Tailwind", "icon": "fa-solid fa-wind", "class": "sc2" },
+        { "label": "Vercel", "icon": "fa-solid fa-rocket", "class": "sc1" },
+        { "label": "Github", "icon": "fa-brands fa-github", "class": "sc4" }
+      ]
+    },
+    {
+      "title": {
+        "en": "Todo-Pro",
+        "fr": "Todo-Pro"
+      },
+      "link": "https://todo-pro-ten.vercel.app/",
+      "description": {
+        "en": "A web application for managing daily tasks. Users can add, edit and delete tasks, organize them by priority and due date, with a full authentication system and a modern, fully responsive interface.",
+        "fr": "Application web de gestion de tâches quotidiennes. Permet d'ajouter, modifier et supprimer des tâches, de les organiser par priorité et date d'échéance, avec un système d'authentification complet et une interface moderne entièrement responsive."
+      },
+      "imgs": [
+        "/imgWorks/todo-pro/i1.png",
+        "/imgWorks/todo-pro/i2.png",
+        "/imgWorks/todo-pro/i3.png",
+        "/imgWorks/todo-pro/i4.png",
+        "/imgWorks/todo-pro/i5.png",
+        "/imgWorks/todo-pro/i6.png",
+        "/imgWorks/todo-pro/i7.png"
+      ],
+      "technologies": [
+        { "label": "ReactJs", "icon": "fa-brands fa-react", "class": "sc4" },
+        { "label": "Bootstrap", "icon": "fa-brands fa-bootstrap", "class": "sc3" },
+        { "label": "CSS", "icon": "fa-brands fa-css3-alt", "class": "sc2" },
+        { "label": "Tailwind", "icon": "fa-solid fa-wind", "class": "sc2" },
+        { "label": "Vercel", "icon": "fa-solid fa-rocket", "class": "sc1" },
         { "label": "Github", "icon": "fa-brands fa-github", "class": "sc4" }
       ]
     }

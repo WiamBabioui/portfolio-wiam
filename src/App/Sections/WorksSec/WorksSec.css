@@ -1,12 +1,12 @@
 .card-works {
-  background: rgba(68, 68, 68, 0.493);
-  /* border: 3px solid #ff274b; */
+  background: var(--bg-card);
   border-radius: 15px;
   height: 100%;
+  transition: background 0.3s ease;
 }
 .hsdgfsdgh {
   padding: 0;
-  height: 170px;
+  height: 150px;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -25,22 +25,26 @@
 .card-works .card-header img {
   width: 100%;
 }
-
 .card-works .card-body h5 {
-  color: white;
-  font-size: 15px;
+  color: var(--text-main);
+  font-size: 16px;
+  font-weight: 700;
   margin: 0;
+  transition: color 0.3s ease;
 }
 .card-works .card-body p {
   margin: 0;
-  color: rgba(255, 255, 255, 0.559);
+  color: var(--text-muted);
   font-size: 12px;
+  transition: color 0.3s ease;
 }
-
 .card-works .card-body {
   gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
 }
-
 .type-work {
   font-size: 10px;
   color: silver;
@@ -49,15 +53,84 @@
   border-radius: 10px;
 }
 
+/* ===== TECHNOLOGIES ===== */
 .container-outils-cars-works {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
+  justify-content: flex-start;
+  gap: 6px;
+  margin-top: 4px;
+}
+.container-outils-cars-works div {
+  flex-shrink: 0;
+}
+.container-outils-cars-works div p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-family: "IBM Plex Mono";
+  font-weight: 500;
+  margin: 0;
+  white-space: nowrap;
 }
 
-.container-outils-cars-works div p {
-  padding: 1px 5px;
-  border-radius: 10px;
+/* couleurs des badges */
+.sc1 { background-color: rgba(220, 38, 38, 0.15); color: #fca5a5; border: 1px solid rgba(220,38,38,0.3); }
+.sc2 { background-color: rgba(6, 182, 212, 0.15); color: #67e8f9; border: 1px solid rgba(6,182,212,0.3); }
+.sc3 { background-color: rgba(147, 51, 234, 0.15); color: #c4b5fd; border: 1px solid rgba(147,51,234,0.3); }
+.sc4 { background-color: rgba(34, 197, 94, 0.15); color: #86efac; border: 1px solid rgba(34,197,94,0.3); }
+.sc5 { background-color: rgba(236, 72, 153, 0.15); color: #f9a8d4; border: 1px solid rgba(236,72,153,0.3); }
+.sc6 { background-color: rgba(249, 115, 22, 0.15); color: #fdba74; border: 1px solid rgba(249,115,22,0.3); }
+
+/* ===== BOUTON VISITER ===== */
+.btn-visit-site {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 14px;
+  padding: 9px 22px;
+  border-radius: 25px;
+  border: 2px solid #ff2f7d;
+  background: linear-gradient(135deg, rgba(255,47,125,0.1), rgba(181,23,99,0.05));
+  color: #ff2f7d;
+  font-family: "IBM Plex Mono";
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+  box-shadow: 0 0 10px rgba(255,47,125,0.15);
+}
+.btn-visit-site i {
+  font-size: 12px;
+  transition: transform 0.3s ease;
+}
+.btn-visit-site:hover {
+  background: linear-gradient(135deg, #ff2f7d, #b51763);
+  color: #fff;
+  box-shadow: 0 0 20px rgba(255,47,125,0.4);
+  transform: translateY(-2px);
+}
+.btn-visit-site:hover i {
+  transform: translate(2px, -2px);
+}
+.carousel-control-prev,
+.carousel-control-next {
+  width: 30px;
+}
+
+/* Bouton centré */
+.btn-visit-site {
+  align-self: center !important;
+}
+[data-theme="light"] .card-works {
+  background: #ffffff;
+  border: 1.5px solid rgba(0,0,0,0.08);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
 }

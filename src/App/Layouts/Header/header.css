@@ -19,7 +19,8 @@ header {
   left: 0;
   width: 100%;
   z-index: 99 !important;
-  background-color: black;
+  background-color: var(--bg-header);
+  transition: background-color 0.3s ease;
 }
 
 .col1Nav,
@@ -46,13 +47,14 @@ header {
   gap: 20px;
 }
 .col2Nav ul li a {
-  color: var(--white);
+  color: var(--text-main);
   font-family: "IBM Plex Mono";
   font-size: 15px !important;
   font-style: normal;
   font-weight: normal;
   line-height: normal;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 .col2Nav ul li a:hover {
   color: var(--color-1);
@@ -64,7 +66,6 @@ header {
   border-radius: 20px;
   border: 1px solid #000;
   background: #e11d74;
-
   padding: 10px 20px;
   color: #fff;
   font-family: "IBM Plex Mono";
@@ -85,9 +86,9 @@ header {
 }
 .col3Nav {
   display: flex !important;
-  /* justify-content: center !important; */
   align-items: center !important;
   flex-direction: row !important;
+  gap: 12px;
 }
 .languages-change {
   display: flex;
@@ -96,7 +97,7 @@ header {
   gap: 5px;
 }
 .languages-change p {
-  color: var(--white);
+  color: var(--text-main);
   font-family: "IBM Plex Mono";
   font-size: 18px !important;
   font-style: normal;
@@ -104,6 +105,7 @@ header {
   line-height: normal;
   margin: 0;
   cursor: pointer;
+  transition: color 0.3s ease;
 }
 .languages-change span {
   color: var(--color-1);
@@ -120,6 +122,51 @@ header {
   display: flex;
   justify-content: flex-end;
 }
+
+/* ===== BOUTON THÈME ===== */
+.theme-toggle-btn {
+  background: transparent;
+  border: 2px solid var(--color-1);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s, transform 0.3s;
+  flex-shrink: 0;
+  padding: 0;
+}
+.theme-toggle-btn:hover {
+  background: transparent;
+  transform: rotate(20deg);
+}
+.theme-toggle-btn:active {
+  background: transparent;
+}
+.theme-toggle-btn i {
+  color: var(--color-1);
+  font-size: 16px;
+}
+
+/* ===== LOGO ===== */
+.header-logo {
+  transition: filter 0.3s ease;
+}
+[data-theme="light"] .header-logo {
+  mix-blend-mode: multiply;
+}
+
+/* ===== MENU BURGER ===== */
+.btn {
+  color: white;
+}
+[data-theme="light"] .btn {
+  color: #111111;
+}
+
 @media screen and (max-width: 576px) {
   #navLinks {
     display: block;
@@ -130,10 +177,10 @@ header {
     text-align: center;
     box-shadow: 0px 4px 10px rgba(113, 92, 92, 0.25) !important;
     z-index: 9;
-    padding: 0 !important;
-    margin: 0 !important;
-    background-color: black;
     padding: 20px 0 !important;
+    margin: 0 !important;
+    background-color: var(--bg-header);
+    transition: background-color 0.3s ease;
   }
   .col2Nav {
     display: none;
@@ -141,8 +188,11 @@ header {
   .col3Nav a {
     display: none;
   }
-  .col3Nav button {
+  .col3Nav button.btn {
     display: block;
+  }
+  .theme-toggle-btn {
+    display: flex !important;
   }
 }
 
@@ -156,10 +206,9 @@ header {
     text-align: center;
     box-shadow: 0px 4px 10px rgba(113, 92, 92, 0.25) !important;
     z-index: 9;
-    padding: 0 !important;
-    margin: 0 !important;
-    background-color: black;
     padding: 20px 0 !important;
+    margin: 0 !important;
+    background-color: var(--bg-header);
   }
   .col2Nav {
     display: none;
@@ -167,10 +216,14 @@ header {
   .col3Nav a {
     display: none;
   }
-  .col3Nav button {
+  .col3Nav button.btn {
     display: block;
   }
+  .theme-toggle-btn {
+    display: flex !important;
+  }
 }
+
 @media screen and (min-width: 769px) and (max-width: 1010px) {
   #navLinks {
     display: block;
@@ -181,10 +234,9 @@ header {
     text-align: center;
     box-shadow: 0px 4px 10px rgba(113, 92, 92, 0.25) !important;
     z-index: 9;
-    padding: 0 !important;
-    margin: 0 !important;
-    background-color: black;
     padding: 20px 0 !important;
+    margin: 0 !important;
+    background-color: var(--bg-header);
   }
   .col2Nav {
     display: none;
@@ -192,7 +244,10 @@ header {
   .col3Nav a {
     display: none;
   }
-  .col3Nav button {
+  .col3Nav button.btn {
     display: block;
+  }
+  .theme-toggle-btn {
+    display: flex !important;
   }
 }
